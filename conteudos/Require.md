@@ -41,23 +41,23 @@ Supondo que você vai utilizar o **`require`** e você está no arquivo **`index
 
 ```
 📁 PastaPrincipal
- | - 📝 cores.js
+ | - 📝 index.js
  | - 📁 PastaSecundária
- | - - - 📝 pessoas.js
+ | - - - 📝 config.json
  | - - - 📁 PastaTerciária
- | - - - - - 📝 carros.js
- | - - - - - 📝 index.js
+ | - - - - - 📝 eventos.js
+ | - - - - - 📝 comandos.js
 ```
 
 ```js
 /* Arquivos na mesma pasta "./" */
-const carros = require('./carros.js')
+const carros = require('./eventos.js')
 
 /* A partir daqui, a cada pasta que quiser retornar é mais um "../" */
 /* Arquivos na pasta anterior "../" */
-const pessoas = require('../pessoas.js')
+const pessoas = require('../config.json')
 
 /* Duas pastas de distância */
-const cores = require('../../cores.js')
+const cores = require('../../index.js')
 ```
 
